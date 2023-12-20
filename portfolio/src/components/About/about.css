@@ -1,0 +1,26 @@
+#about{
+
+    width: 100vw;
+    max-width: 75rem;
+    margin: 0 auto;
+    position: relative;
+ } 
+ .aboutContent{
+   
+    width: 100vw;
+    padding: 2rem;
+    font-size: 3rem;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.aboutText{
+    font-size: medium;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+/* .abtme{
+    font-size: 1.75rem;
+    font-weight: 100;
+}   */

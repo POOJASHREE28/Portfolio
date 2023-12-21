@@ -36,12 +36,13 @@ const Projects = () => {
 
   return (
     <section id="projects">
-      <h1 className="heading">Projects</h1>
-      <div className="projectContent">
-        {projects.map((project) => (
-          <ProjectCard key={project.name} {...project} />
-        ))}
-      </div>
+        <span className="projects">Projects</span>
+        <div className="projectContent">
+          {projects.map((project) => (
+            <ProjectCard key={project.name} {...project} />
+          ))}
+        </div>
+      
     </section>
   );
 };

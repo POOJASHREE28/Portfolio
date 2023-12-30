@@ -8,14 +8,13 @@
 
 .contact-header {
   display: flex;
-  font-size: 3rem;
-  font-weight: 500;
+  font-size: medium;
   padding-bottom: 5rem;
 }
 
 .heading{
   margin-bottom: 0px;
-  font-size: 2rem;
+  font-size: small;
   padding-left: 2rem;
 }
 .contactContent{
@@ -25,7 +24,14 @@
   display: flex;
   flex-direction: column; /* Arrange elements horizontally */
   justify-content: space-between; /* Distribute elements with space around */
-  align-items: center; /* Align elements vertically in the middle */
+  /* align-items: center; Align elements vertically in the middle */
+  text-align: center;
+  
+}
+.intro-paragraph {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 30px;
 }
 
 .main-info{
@@ -70,14 +76,18 @@
   gap: 10px;
 }
  
-.name-field,
+.name-field {
+  color: white;
+  font-size: 20px;
+
+}
 .email-field {
   color: white;
-  font-size: 30px;
+  font-size: 20px;
 
 }
 .message-field {
-  font-size: 32px;
+  font-size: 20px;
   gap: 1rem;
 }
 input{
@@ -122,12 +132,15 @@ textarea {
 .contact-form-submit {
   background-color: #007bff;
   color: white;
-  padding: 10px 20px;
+  padding: 5px 5px;
   border: none;
-  border-radius: 5px;
+  width: 120px;
+  height: 50px;
+  border-radius: 3px;
   cursor: pointer;
   gap: 1rem;
   text-align: center;
+  align-items: center;
   margin-top: 15px;
 }
 

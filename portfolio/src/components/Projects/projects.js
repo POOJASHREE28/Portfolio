@@ -36,7 +36,7 @@ const Projects = () => {
 
   return (
     <section id="projects">
-        <span className="projects">Projects</span>
+        <div className="projects">Projects</div>
         <div className="projectContent">
           {projects.map((project) => (
             <ProjectCard key={project.name} {...project} />

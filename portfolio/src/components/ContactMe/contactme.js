@@ -23,17 +23,35 @@ function ContactMe() {
   return (
     <section id="contactMe">
       <div className="contact-header">ContactMe</div>
-      <div className="heading">Get in touch</div>
-      <div className="contactContent">
-        <div className="main-info">
-          <div>
-            <p className="intro-paragraph">
-              Excited to make a connection! Whether you've got a cool project <br></br>idea
-              or just want to drop a friendly 'hi,' I'm all ears. Don't hesitate<br></br> to
-              hit me up through the contact form or slide into my socials. <br></br>Always
-              up for a chill collaboration and ready to dive into fresh<br></br>
-              opportunities. Let's whip up something awesome together!
-            </p>
+      
+     
+        <div className="contactContent">
+          <div className="row">
+            <div className="heading">Get in touch</div>
+            <div className="intro-paragraph">
+              Excited to make a connection! Whether you've got a cool project idea
+              or just want to drop a friendly 'hi,' I'm all ears. Don't hesitate to
+              hit me up through the contact form or slide into my socials. Always
+              up for a chill collaboration and ready to dive into fresh
+              opportunities. Let's whip up something awesome together!<br></br> Follow me⬇️(❁´◡`❁)
+            </div>
+            <div className="social-icons">
+              <a href="https://www.instagram.com/" target="_self">
+                <img src={Instagram} alt="Instagram" />
+              </a>
+              <a href="https://github.com/" target="_self">
+                <img src={Github} alt="GitHub" />
+              </a>
+              <a href="https://www.linkedin.com/" target="_self">
+                <img src={Linkdin} alt="LinkedIn" />
+              </a>
+              <a href="https://telegram.org/" target="_self">
+                <img src={Telegram} alt="Telegram" />
+              </a>
+              <a href="https://discord.com/" target="_self">
+                <img src={Discord} alt="Discord" />
+              </a>
+            </div>
           </div>
           <div className="contact-form">
             <form ref={form} onSubmit={sendEmail} className="">
@@ -55,24 +73,6 @@ function ContactMe() {
             </form>
           </div>
         </div>
-        <div className="social-icons">
-            <a href="https://www.instagram.com/" target="_self">
-              <img src={Instagram} alt="Instagram" />
-            </a>
-            <a href="https://github.com/" target="_self">
-              <img src={Github} alt="GitHub" />
-            </a>
-            <a href="https://www.linkedin.com/" target="_self">
-              <img src={Linkdin} alt="LinkedIn" />
-            </a>
-            <a href="https://telegram.org/" target="_self">
-              <img src={Telegram} alt="Telegram" />
-            </a>
-            <a href="https://discord.com/" target="_self">
-              <img src={Discord} alt="Discord" />
-            </a>
-          </div>
-      </div>
     </section>
   );
 }

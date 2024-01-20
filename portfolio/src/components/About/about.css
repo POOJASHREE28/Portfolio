@@ -1,26 +1,154 @@
-#about{
-
-    width: 100vw;
+#about {
+    /* Overall container styling */
+    width: 100%;
     max-width: 75rem;
     margin: 0 auto;
+    /* padding: 30px; */
+    font-family: sans-serif;
     position: relative;
- } 
- .aboutContent{
-   
-    width: 100vw;
-    padding: 2rem;
-    font-size: 3rem;
-    font-weight: 700;
+  }
+
+  
+  .header {
+    text-align: center;
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 0px;
+  }
+  
+  .columns {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .left-column{
+    margin-top: 20px;
+    text-align: center;
+    width: 45%;
+    padding: 15px;
+  }
+  
+  
+  .profile-image img {
+    margin-top: 50px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+  }
+  
+  .about-text {
+    /* About text styling */
+    margin-top: 10px;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+    /* margin: 0 auto; */
+  }
+  
+  .resume-button {
+    margin-top: 30px;
+    background-color: #4c92dd;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .right-column{
+    margin-top: 20px;
+    text-align: left;
+    width: 45%;
+    padding: 15px;
     display: flex;
     flex-direction: column;
+  }
+
+  .right-column h2 {
+    margin-bottom: 20px;
+    display: flex;
     justify-content: center;
-}
-.aboutText{
-    font-size: medium;
+  }
+  
+
+  .right-column .skill-box{
+    width: 100%;
+    margin: 20px 0;
+  }
+  .skill-box .title{
+    display: block;
+    font-size: 16px;
     font-weight: 400;
-    letter-spacing: 1px;
-}
-/* .abtme{
-    font-size: 1.75rem;
-    font-weight: 100;
-}   */
+    color: #efeaea;
+  }
+   .skill-box .skill-bar{
+    height: 8px;
+    width: 100%;
+    border-radius:6px ;
+    margin-top:6px ;
+    background: rgba(229, 225, 225, 0.1);
+  }
+  .skill-box .skill-per{
+    position: relative;
+    display: block;
+    height: 100%;
+    width: 95%;
+    border-radius: 6px;
+    background: rgb(64, 69, 232);
+    animation: progress 0.4s ease-in-out forwards;
+    opacity: 0;
+  }
+  .skill-per.hcj{
+    width: 80%;
+    animation-delay: 0.1s;
+  }
+  .skill-per.rj{
+    width: 50%;
+    animation-delay: 0.15s;
+  }
+  .skill-per.com{
+    width: 60%;
+     animation-delay: 0.2s;
+  }
+  .skill-per.ps{
+    width: 75%;
+    animation-delay: 0.25s;
+  }
+  .skill-per.dm{
+    width: 55%;
+    animation-delay: 0.3s;
+  }
+  @keyframes progress{
+    0%{
+      width: 0;
+      opacity: 1;
+    }
+    100%{
+      opacity: 1;
+    }
+
+  }
+  .skill-per .tooltip{
+    position: absolute;
+    right: -14px;
+    top: -28px;
+    font: 2px;
+    font-weight: 400;
+    color: white;
+    padding: 2px 6px;
+    border-radius: 3px;
+    background:  rgb(30,30,30);
+    z-index: 1;
+  }
+  .tooltip::before{
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -2px;
+    height: 10px;
+    width: 10px;
+    z-index: -1;
+    background-color: rgb(30,30,30);
+    transform: translateX(-50%) rotate(45deg);
+  } 

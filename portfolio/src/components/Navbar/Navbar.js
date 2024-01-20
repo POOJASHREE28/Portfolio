@@ -1,6 +1,6 @@
 import React from 'react';
 import './Navbar.css';
-import {Link} from 'react-scroll';
+import { Link } from 'react-router-dom';
 import logo from '../../assets/logo.png';
 import contactImg from '../../assets/contact.png'
 const Navbar = () => {
@@ -8,12 +8,13 @@ const Navbar = () => {
     <nav className="navbar">
        <img src={logo} alt="logo" className="logo"/>
        <div className="desktopMenu">
-          <Link className="desktopMenuListItem">Home</Link>
-          <Link className="desktopMenuListItem">About</Link>
-          <Link className="desktopMenuListItem">Projects</Link>
+          <Link to="/" className="desktopMenuListItem" >Home</Link>
+          <Link to="/About" className="desktopMenuListItem"  >About</Link>
+          <Link to="/Projects" className="desktopMenuListItem">Projects</Link>
        </div>
-       <button className="desktopMenuBtn">
-        <img src={contactImg} alt="contact" className="desktopMenuImg"/>Contact Me</button>
+       <Link to="/ContactMe" className="desktopMenuBtn">
+          <img src={contactImg} alt="contact" className="desktopMenuImg" />Contact Me
+      </Link>
     </nav>
   );
 }

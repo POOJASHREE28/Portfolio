@@ -22,7 +22,7 @@ function ContactMe() {
   
   return (
     <section id="contactMe">
-      <div className="contact-header">Contact Me</div>
+      <h1 className="contact-header">Contact Me</h1>
       
      
         <div className="contactContent">

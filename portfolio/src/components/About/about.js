@@ -1,6 +1,6 @@
 import React from 'react';
 import './about.css';
-import Profile from '../../assets/profile.jpeg';
+import Profile from '../../assets/profile.png';
 
 const About = () => {
  return (
@@ -8,7 +8,7 @@ const About = () => {
      <div className="header">Who Am I?</div>
      <div className="columns">
         <div className="left-column">
-         <h2>About Me</h2>
+         <h1>About Me</h1>
          <div className="profile-image">
            <img src={Profile} alt="Profile Image" />
          </div>

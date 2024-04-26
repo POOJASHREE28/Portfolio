@@ -1,20 +1,28 @@
+
 import React from 'react';
 import './Navbar.css';
 import { Link } from 'react-router-dom';
 import logo from '../../assets/logo.png';
-import contactImg from '../../assets/contact.png'
-const Navbar = () => {
+
+function Navbar({ activeSection, onSectionClick }) {
+  const sections = ['Home', 'About', 'Projects', 'ContactMe'];
+
   return (
     <nav className="navbar">
-       <img src={logo} alt="logo" className="logo"/>
-       <div className="desktopMenu">
-          <Link to="/" className="desktopMenuListItem" >Home</Link>
-          <Link to="/About" className="desktopMenuListItem"  >About</Link>
-          <Link to="/Projects" className="desktopMenuListItem">Projects</Link>
-       </div>
-       <Link to="/ContactMe" className="desktopMenuBtn">
-          <img src={contactImg} alt="contact" className="desktopMenuImg" />Contact Me
-      </Link>
+      <img src={logo} alt="logo" className="logo" />
+      <div className="desktopMenu">
+        {sections.map((section) => (
+          <Link
+            key={section}
+            to={`/${section}`} // Ensure proper routing paths
+            className={`desktopMenuListItem ${activeSection === section ? 'active' : ''}`}
+            onClick={() => onSectionClick(section)} // Trigger smooth scroll
+          >
+            {section}
+          </Link>
+        ))}
+      </div>
+      
     </nav>
   );
 }
